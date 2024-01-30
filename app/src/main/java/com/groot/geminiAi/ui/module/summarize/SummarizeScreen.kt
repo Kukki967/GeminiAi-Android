@@ -19,8 +19,6 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.groot.geminiAi.R
-import com.groot.geminiAi.SummarizeUiState
-import com.groot.geminiAi.SummarizeViewModel
 import com.groot.geminiAi.ui.shared.BasicTextFieldButtonView
 import com.groot.geminiAi.ui.shared.LoaderIndicator
 
