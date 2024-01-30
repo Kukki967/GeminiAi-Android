@@ -1,4 +1,4 @@
-package com.groot.geminiAi
+package com.groot.geminiAi.ui.module.summarize
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

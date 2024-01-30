@@ -1,4 +1,4 @@
-package com.groot.geminiAi
+package com.groot.geminiAi.ui.module.summarize
 
 /**
  * A sealed hierarchy describing the state of the text generation.
