@@ -4,10 +4,10 @@
     <string name="action_try">Try it</string>
 
     <!-- Menu strings -->
-    <string name="menu_reason_title">Generate Summary from text-and-image input (multimodal)</string>
-    <string name="menu_reason_description">Sample app for uploading images and asking about them</string>
-    <string name="menu_summarize_title">Generate Summary from text-only input</string>
-    <string name="menu_summarize_description">Write any text and get result in summarized form</string>
+    <string name="menu_reason_title">Generate Text from text-and-image input (multimodal)</string>
+    <string name="menu_reason_description">Upload images and ask question regarding it \n 1. Difference between two images.  \n 2. Use as text extraction from image</string>
+    <string name="menu_summarize_title">Generate Text from text-only input</string>
+    <string name="menu_summarize_description">Input with text and get summarized text\n 1.Write query and get it solved \n 2. Prompt with a big paragraph get summarised text for it</string>
 
 
     <!-- Summarize sample strings -->
