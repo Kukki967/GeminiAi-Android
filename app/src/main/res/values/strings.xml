@@ -14,4 +14,10 @@
     <string name="summarize_label">Text</string>
     <string name="summarize_hint">Enter text to summarize</string>
 
+
+    <!-- Photo Reasoning sample strings -->
+    <string name="reason_label">Question</string>
+    <string name="reason_hint">Upload an image and then ask a question</string>
+    <string name="add_image">Add Image</string>
+
 </resources>

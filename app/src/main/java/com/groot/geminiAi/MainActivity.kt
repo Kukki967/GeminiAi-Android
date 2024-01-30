@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
 
                     val navController = rememberNavController()
 
-                    NavHostController(navController,generativeModel)
+                    NavHostController(navController)
                 }
             }
         }
