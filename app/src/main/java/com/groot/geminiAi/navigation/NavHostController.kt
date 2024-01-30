@@ -9,8 +9,8 @@ import com.groot.geminiAi.BuildConfig
 import com.groot.geminiAi.ui.module.menu.MenuScreen
 import com.groot.geminiAi.ui.module.reasoning.PhotoReasoningRoute
 import com.groot.geminiAi.ui.module.reasoning.PhotoReasoningViewModel
-import com.groot.geminiAi.ui.module.summarize.SummarizeViewModel
 import com.groot.geminiAi.ui.module.summarize.SummarizeRoute
+import com.groot.geminiAi.ui.module.summarize.SummarizeViewModel
 
 @Composable
 fun NavHostController(navController: NavHostController) {

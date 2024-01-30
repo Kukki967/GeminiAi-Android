@@ -33,7 +33,7 @@ internal fun SummarizeRoute(
         uiState = summarizeUiState,
         onSummarizeClicked = { inputText ->
             summarizeViewModel.summarize(inputText)
-    })
+        })
 }
 
 @Composable
@@ -47,14 +47,19 @@ fun SummarizeScreen(
             .padding(all = 8.dp)
             .verticalScroll(rememberScrollState())
     ) {
-        BasicTextFieldButtonView(Modifier.weight(8f), R.string.summarize_label, R.string.summarize_hint, onSummarizeClicked)
+        BasicTextFieldButtonView(
+            Modifier.weight(8f),
+            R.string.summarize_label,
+            R.string.summarize_hint,
+            onSummarizeClicked
+        )
 
         when (uiState) {
             is SummarizeUiState.Initial -> {
                 // Nothing is shown
             }
 
-            is  SummarizeUiState.Loading -> {
+            is SummarizeUiState.Loading -> {
                 LoaderIndicator()
             }
 

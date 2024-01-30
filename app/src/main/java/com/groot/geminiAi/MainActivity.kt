@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import com.google.ai.client.generativeai.GenerativeModel
 import com.groot.geminiAi.navigation.NavHostController
 import com.groot.geminiAi.ui.theme.GeminiAiTheme
+
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

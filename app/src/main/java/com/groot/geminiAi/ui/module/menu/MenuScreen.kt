@@ -1,7 +1,6 @@
 package com.groot.geminiAi.ui.module.menu
 
 import androidx.activity.compose.BackHandler
-import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -17,9 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -86,14 +83,22 @@ fun MenuListView(
     onItemClicked: (String) -> Unit = { }
 ) {
     val menuItems = listOf(
-        MenuItem(Route.summarizeScreen, R.string.menu_summarize_title, R.string.menu_summarize_description),
-        MenuItem(Route.photoReasoning, R.string.menu_reason_title, R.string.menu_reason_description),
+        MenuItem(
+            Route.summarizeScreen,
+            R.string.menu_summarize_title,
+            R.string.menu_summarize_description
+        ),
+        MenuItem(
+            Route.photoReasoning,
+            R.string.menu_reason_title,
+            R.string.menu_reason_description
+        ),
     )
     LazyColumn(
         Modifier
             .padding(top = 16.dp, bottom = 16.dp)
     ) {
-        itemsIndexed(menuItems) {index, menuItem ->
+        itemsIndexed(menuItems) { index, menuItem ->
             Card(
                 modifier = Modifier
                     .fillMaxWidth()

@@ -48,11 +48,6 @@ import com.groot.geminiAi.ui.shared.LoaderIndicator
 import com.groot.geminiAi.ui.utility.UriSaver
 import kotlinx.coroutines.launch
 
-// Create a mutable map with key-value pairs
-val mutableMap = mutableMapOf("one" to 1, "two" to 2, "three" to 3)
-
-// Create an immutable map with key-value pairs
-val immutableMap = mapOf("one" to 1, "two" to 2, "three" to 3)
 
 @Composable
 internal fun PhotoReasoningRoute(
@@ -151,7 +146,7 @@ fun PhotoReasoningScreen(
             LazyRow(
                 modifier = Modifier.padding(all = 8.dp)
             ) {
-                itemsIndexed(imageUris) { index,imageUri ->
+                itemsIndexed(imageUris) { index, imageUri ->
                     AsyncImage(
                         model = imageUri,
                         contentDescription = null,
