@@ -20,4 +20,7 @@
     <string name="reason_hint">Upload an image and then ask a question</string>
     <string name="add_image">Add Image</string>
 
+    <!-- Chat sample strings -->
+    <string name="chat_label">Message</string>
+    <string name="action_send">Send</string>
 </resources>

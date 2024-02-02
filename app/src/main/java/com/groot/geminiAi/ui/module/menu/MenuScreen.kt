@@ -94,6 +94,7 @@ fun MenuListView(
             R.string.menu_reason_description
         ),
     )
+
     LazyColumn(
         Modifier
             .padding(top = 16.dp, bottom = 16.dp)

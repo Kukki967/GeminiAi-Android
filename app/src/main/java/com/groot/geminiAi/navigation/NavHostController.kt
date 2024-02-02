@@ -6,6 +6,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.google.ai.client.generativeai.GenerativeModel
 import com.groot.geminiAi.BuildConfig
+import com.groot.geminiAi.ui.module.chat.ChatRoute
+import com.groot.geminiAi.ui.module.chat.ChatViewModel
 import com.groot.geminiAi.ui.module.menu.MenuScreen
 import com.groot.geminiAi.ui.module.reasoning.PhotoReasoningRoute
 import com.groot.geminiAi.ui.module.reasoning.PhotoReasoningViewModel
@@ -38,6 +40,16 @@ fun NavHostController(navController: NavHostController) {
             )
             val viewModel = PhotoReasoningViewModel(generativeModel)
             PhotoReasoningRoute(navController, viewModel)
+        }
+        composable(Route.chatScreen) {
+            val generativeModel = GenerativeModel(
+                // For text-and-images input (multimodal), use the gemini-pro-vision model
+                modelName = "gemini-pro-vision",
+                // Access your API key as a Build Configuration variable (see "Set up your API key" above)
+                apiKey = BuildConfig.apiKey
+            )
+            val viewModel = ChatViewModel(generativeModel)
+            ChatRoute(navController, viewModel)
         }
     }
 }
